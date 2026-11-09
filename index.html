@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shree Ganesh Traders - Plumbing, pipes, tanks and sanitaryware products in Udgir.">
+  <title>Shree Ganesh Traders | Plumbing & Sanitaryware</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">SHREE GANESH <span>TRADERS</span></a>
+
+    <nav>
+      <a href="#home" data-i18n="home">Home</a>
+      <a href="#about" data-i18n="about">About</a>
+      <a href="#catalogue" data-i18n="catalogue">Products</a>
+      <a href="#contact" data-i18n="contact">Contact</a>
+    </nav>
+
+    <select id="languageSelect" aria-label="Choose language">
+      <option value="en">English</option>
+      <option value="mr">मराठी</option>
+      <option value="hi">हिंदी</option>
+    </select>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="welcome">WELCOME TO</p>
+        <h1>SHREE GANESH TRADERS</h1>
+        <p data-i18n="heroText">
+          Your trusted destination for quality plumbing and sanitaryware products.
+        </p>
+        <a href="#catalogue" class="btn" data-i18n="explore">Explore Products</a>
+      </div>
+    </section>
+
+    <section class="shop-gallery section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="ourShop">OUR SHOP</p>
+        <h2 data-i18n="shopGallery">A Look Inside Our Store</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="images/shopimages/shopimage.jpeg" alt="Shree Ganesh Traders shop">
+        <img src="images/shopimages/inside.jpeg" alt="Inside the shop">
+        <img src="images/shopimages/fromback.jpeg" alt="Shop view from back">
+        <img src="images/shopimages/sink.jpeg" alt="Sanitaryware display">
+      </div>
+    </section>
+
+    <section class="owner-section section" id="about">
+      <div class="owner-card">
+        <p class="eyebrow" data-i18n="aboutUs">ABOUT US</p>
+        <h2 data-i18n="trustedStore">Your Trusted Plumbing & Sanitaryware Store</h2>
+        <p data-i18n="aboutText">
+          Shree Ganesh Traders offers plumbing, pipes, water tanks,
+          bathroom fittings and sanitaryware products from various brands.
+        </p>
+        <h3 data-i18n="owner">Shop Owner</h3>
+        <p class="owner-name">Rohit Kalyane</p>
+        <a href="tel:+917666933600" class="contact-link">+91 76669 33600</a>
+        <p class="address" data-i18n="address">
+          Near Amrut Hospital, Monda Road, Udgir, District Latur.
+        </p>
+      </div>
+    </section>
+
+    <section class="catalogue section" id="catalogue">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="ourProducts">OUR PRODUCTS</p>
+        <h2 data-i18n="productCatalogue">Product Catalogue</h2>
+        <p data-i18n="catalogueText">
+          Explore products from all our available brands.
+        </p>
+      </div>
+
+      <div class="search-box">
+        <input
+          type="search"
+          id="productSearch"
+          placeholder="Search products or brands..."
+          data-i18n-placeholder="searchPlaceholder"
+        >
+      </div>
+
+      <div id="catalogueContainer"></div>
+      <p id="noResults" class="no-results" hidden>
+        No matching products found.
+      </p>
+    </section>
+
+    <section class="contact-section section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="getInTouch">GET IN TOUCH</p>
+        <h2 data-i18n="visitContact">Visit or Contact Us</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="contact-icon">👤</span>
+          <h3 data-i18n="owner">Shop Owner</h3>
+          <p>Rohit Kalyane</p>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">📞</span>
+          <h3 data-i18n="phone">Phone</h3>
+          <a href="tel:+917666933600">+91 76669 33600</a>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">📍</span>
+          <h3 data-i18n="addressTitle">Shop Address</h3>
+          <p data-i18n="address">
+            Near Amrut Hospital, Monda Road, Udgir, District Latur.
+          </p>
+        </div>
+      </div>
+
+      <a
+        class="btn whatsapp-btn"
+        href="https://wa.me/917666933600?text=Hello%20Shree%20Ganesh%20Traders"
+        target="_blank"
+        rel="noopener"
+        data-i18n="whatsapp"
+      >Contact on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <h3>SHREE GANESH TRADERS</h3>
+    <p data-i18n="footerText">Quality Plumbing & Sanitaryware Products</p>
+    <p>© <span id="year"></span> Shree Ganesh Traders. All rights reserved.</p>
+  </footer>
+
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/917666933600?text=Hello%20Shree%20Ganesh%20Traders"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp"
+  >WhatsApp</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
